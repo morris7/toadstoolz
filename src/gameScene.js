@@ -91,6 +91,8 @@ create() {
 
     //  Input Events
     this.cursors = this.input.keyboard.createCursorKeys();
+    this.space  = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.SPACE);
+    // game.input.keyboard.addKeyCapture([ Phaser.Keyboard.SPACEBAR ]);
 
     //  Some coins to collect, 12 in total, evenly spaced 70 pixels apart along the x axis
     this.coins = this.physics.add.group({
@@ -147,7 +149,7 @@ create() {
         this.player.anims.play('turn');
       }
 
-      if (this.cursors.up.isDown && this.player.body.touching.down)
+      if ((this.cursors.up.isDown || this.space.isDown) && this.player.body.touching.down)
       {
         this.player.setVelocityY(-330);
       }
