@@ -180,8 +180,8 @@ hitBomb() {
     this.goodHit.play({ volume: 0.2 });
 
     //  Add and update the score
-    this.score += 0.1;
-    this.scoreText.setText('SCORE: ' + Math.round(this.score * 10) / 10 + 'Magic');
+    this.score += 1;
+    this.scoreText.setText('SCORE: ' + this.score * 10 + ' Magic');
 
     if (this.coins.countActive(true) === 0)
     {

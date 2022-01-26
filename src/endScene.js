@@ -14,7 +14,7 @@ class EndScene extends Phaser.Scene {
 
   init(data){
     console.log('init', data);
-    this.finalScore = Math.round(data.scoreText * 10) / 10;
+    this.finalScore = data.scoreText * 10;
   };
 
   create() {
