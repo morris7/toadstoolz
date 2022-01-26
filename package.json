@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "http-server": "^14.0.0"
+  },
+  "name": "toadstoolz",
+  "version": "1.0.0",
+  "description": "toadstoolz game",
+  "main": "index.js",
+  "scripts": {
+    "start": "http-server ./src",
+    "test": "test"
+  },
+  "author": "sam morris",
+  "license": "ISC"
+}
