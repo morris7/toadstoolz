@@ -110,7 +110,7 @@ create() {
 
     //  The score
     this.creatorText = this.add.text(10, 10, 'created by momomorris', { fontSize: '12px', fill: '#fff' });
-    this.scoreText = this.add.text(10, 25, 'SCORE: 0 ETH', { fontSize: '18px', fill: '#fff' });
+    this.scoreText = this.add.text(10, 25, 'SCORE: 0 Magic', { fontSize: '18px', fill: '#fff' });
 
     //  Collide the player and the coins with the platforms
     this.physics.add.collider(this.player, this.platforms);
@@ -181,7 +181,7 @@ hitBomb() {
 
     //  Add and update the score
     this.score += 0.1;
-    this.scoreText.setText('SCORE: ' + Math.round(this.score * 10) / 10 + 'ETH');
+    this.scoreText.setText('SCORE: ' + Math.round(this.score * 10) / 10 + 'Magic');
 
     if (this.coins.countActive(true) === 0)
     {

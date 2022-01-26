@@ -23,7 +23,7 @@ class EndScene extends Phaser.Scene {
     
     this.add.text(250,250, 'GAME OVER!',  { fontSize: '26px', fill: '#fff' });
 
-    this.add.text(250,280, `FINAL SCORE: ${this.finalScore} ETH 🚀`,  { fontSize: '22px', fill: '#fff' });
+    this.add.text(250,280, `FINAL SCORE: ${this.finalScore} Magic 🚀`,  { fontSize: '22px', fill: '#fff' });
     
     var retry = this.add.text(250, 350, 'Play Again',  { fontSize: '22px', fill: '#fff' })
     retry.setInteractive({ useHandCursor: true });
